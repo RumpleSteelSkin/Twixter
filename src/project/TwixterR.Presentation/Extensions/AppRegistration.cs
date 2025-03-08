@@ -10,6 +10,8 @@ public static class AppRegistration
             app.UseSwaggerUI();
         }
         app.UseHttpsRedirection();
+        app.UseAuthorization();
+        app.MapControllers();
         app.Run();
         return app;
     }
