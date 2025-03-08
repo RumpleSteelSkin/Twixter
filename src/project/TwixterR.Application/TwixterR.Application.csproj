@@ -11,4 +11,11 @@
         <ProjectReference Include="..\..\cores\Core.Persistence\Core.Persistence.csproj" />
         <ProjectReference Include="..\TwixterR.Domain\TwixterR.Domain.csproj"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+        <PackageReference Include="MediatR" Version="12.4.1" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.6.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.6.0" />
+    </ItemGroup>
 </Project>

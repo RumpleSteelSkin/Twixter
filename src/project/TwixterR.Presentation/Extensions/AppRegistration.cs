@@ -11,6 +11,7 @@ public static class AppRegistration
         }
         app.UseHttpsRedirection();
         app.UseAuthorization();
+        app.UseExceptionHandler(_ => { });
         app.MapControllers();
         app.Run();
         return app;
