@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwixterR.Domain", "src\proj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwixterR.Persistence", "src\project\TwixterR.Persistence\TwixterR.Persistence.csproj", "{562033D1-60DB-4CD4-BF3A-6ED99AD63CBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwixterR.Presentation", "src\project\TwixterR.Presentation\TwixterR.Presentation.csproj", "{B6DA7AD8-6F2D-475C-A7FE-780B2991F8A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwixterR.Presentation", "src\project\TwixterR.Presentation\TwixterR.Presentation.csproj", "{99BD061C-97DD-4145-AE5B-DF48064E6713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,7 +31,7 @@ Global
 		{387798E7-655A-4C79-AC84-EE9D4AD1133E} = {443DC19E-325B-416A-828F-B81484409C9E}
 		{402502E0-059A-4E22-AD35-3AD7DF3D1946} = {443DC19E-325B-416A-828F-B81484409C9E}
 		{562033D1-60DB-4CD4-BF3A-6ED99AD63CBA} = {443DC19E-325B-416A-828F-B81484409C9E}
-		{B6DA7AD8-6F2D-475C-A7FE-780B2991F8A7} = {443DC19E-325B-416A-828F-B81484409C9E}
+		{99BD061C-97DD-4145-AE5B-DF48064E6713} = {443DC19E-325B-416A-828F-B81484409C9E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D6791AE1-30E0-4C24-B846-4E682B2BFC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -54,9 +54,9 @@ Global
 		{562033D1-60DB-4CD4-BF3A-6ED99AD63CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{562033D1-60DB-4CD4-BF3A-6ED99AD63CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{562033D1-60DB-4CD4-BF3A-6ED99AD63CBA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6DA7AD8-6F2D-475C-A7FE-780B2991F8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6DA7AD8-6F2D-475C-A7FE-780B2991F8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6DA7AD8-6F2D-475C-A7FE-780B2991F8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6DA7AD8-6F2D-475C-A7FE-780B2991F8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BD061C-97DD-4145-AE5B-DF48064E6713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BD061C-97DD-4145-AE5B-DF48064E6713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BD061C-97DD-4145-AE5B-DF48064E6713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BD061C-97DD-4145-AE5B-DF48064E6713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
