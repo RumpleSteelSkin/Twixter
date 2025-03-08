@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\..\cores\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
+        <ProjectReference Include="..\..\cores\Core.Persistence\Core.Persistence.csproj" />
+        <ProjectReference Include="..\TwixterR.Domain\TwixterR.Domain.csproj"/>
+    </ItemGroup>
+</Project>
