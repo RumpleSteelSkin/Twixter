@@ -23,6 +23,15 @@ public static class ServiceRegistration
         }).AddEntityFrameworkStores<BaseDbContext>().AddDefaultTokenProviders();
 
         services.AddExceptionHandler<HttpExceptionHandler>();
+        
+        services.AddCors(opt =>
+        {
+            opt.AddPolicy("AllowAll",
+                policy => 
+                    policy.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+        });
 
         return services;
     }

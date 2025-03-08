@@ -12,6 +12,7 @@ public static class AppRegistration
         app.UseHttpsRedirection();
         app.UseAuthorization();
         app.UseExceptionHandler(_ => { });
+        app.UseCors("AllowAll");
         app.MapControllers();
         app.Run();
         return app;
