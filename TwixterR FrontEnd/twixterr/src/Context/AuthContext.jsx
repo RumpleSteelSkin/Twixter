@@ -1,6 +1,7 @@
 ﻿import { createContext, useState, useEffect } from "react";
+import {Navigate} from "react-router-dom";
 
-const AuthContext = createContext();
+const AuthContext = createContext(undefined);
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -21,6 +22,7 @@ export const AuthProvider = ({ children }) => {
         setToken(null);
         setUser(null);
         localStorage.removeItem("token");
+        return <Navigate to="/login" replace />;
     };
 
     return (

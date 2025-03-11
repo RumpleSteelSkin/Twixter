@@ -39,6 +39,7 @@ public class JwtService(
         var claimList = new List<Claim>()
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name,user.UserName!),
             new Claim(ClaimTypes.Email, user.Email ?? throw new NotFoundException("User email not set!"))
         };
 
