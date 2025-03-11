@@ -9,7 +9,7 @@ public static class AppRegistration
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-        app.UseHttpsRedirection();
+        //app.UseHttpsRedirection();
         app.UseAuthorization();
         app.UseExceptionHandler(_ => { });
         app.UseCors("AllowAll");

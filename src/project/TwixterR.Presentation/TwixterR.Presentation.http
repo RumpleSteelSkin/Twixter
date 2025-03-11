@@ -1,6 +1,5 @@
 @TwixterR.Presentation_HostAddress = http://localhost:5183
 
-GET {{TwixterR.Presentation_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
