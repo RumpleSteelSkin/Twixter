@@ -20,7 +20,6 @@ const Login = () => {
         e.preventDefault();
         setErrorMessage("");
         setSuccessMessage("");
-
         try {
             const response = await login(formData);
             loginUser(response.token);
@@ -70,6 +69,7 @@ const Login = () => {
                                 required
                                 className="w-full px-4 py-3 border border-gray-700 rounded-lg bg-black text-white placeholder-gray-500 focus:outline-none focus:border-[#1DA1F2] focus:ring-1 focus:ring-[#1DA1F2] transition-colors"
                                 placeholder="E-posta"
+                                autoComplete="username"
                                 onChange={handleChange}
                             />
                         </div>
@@ -80,6 +80,7 @@ const Login = () => {
                                 required
                                 className="w-full px-4 py-3 border border-gray-700 rounded-lg bg-black text-white placeholder-gray-500 focus:outline-none focus:border-[#1DA1F2] focus:ring-1 focus:ring-[#1DA1F2] transition-colors"
                                 placeholder="Şifre"
+                                autoComplete="new-password"
                                 onChange={handleChange}
                             />
                         </div>
