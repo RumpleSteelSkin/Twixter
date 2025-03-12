@@ -1,14 +1,16 @@
-﻿import { useState } from "react";
+﻿import {useContext, useState} from "react";
 import { Twitter } from 'lucide-react';
 import { Link } from "react-router-dom";
+import {register} from "../api.js";
+import AuthContext from "../Context/AuthContext.jsx";
 
 const Register = () => {
+    const { registerUser } = useContext(AuthContext);
     const [formData, setFormData] = useState({
         userName: "",
         email: "",
         password: "",
     });
-
     const [errorMessage, setErrorMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
 
@@ -21,6 +23,7 @@ const Register = () => {
         setErrorMessage("");
         setSuccessMessage("");
         try {
+            const response = await register(formData);
             setSuccessMessage("Kayıt başarılı! Giriş sayfasına yönlendiriliyorsunuz...");
             setTimeout(() => {
                 window.location.href = "/login";  // Başarılı kayıt sonrası yönlendirme
